@@ -9,13 +9,15 @@ function refresh()
         calyChat += tresc_diva[i];
     }
     document.getElementById("chat").innerHTML = tresc_diva.join('');
+    
 }
 
 function submit()
 {
-    tresc_diva.push('<div class="log">' + document.getElementById("message").value + '</div>');
-    tresc_diva.push('<div style="clear: both;"></div>')
-    document.getElementById("message").value = ""
+    tresc_diva.unshift('<div class="log">' + document.getElementById("message").value + '</div>');
+    tresc_diva.unshift('<div style="clear: both;"></div>');
+    document.getElementById("message").value = "";
     // document.getElementById("chat").innerHTML = document.getElementById("message").value
     refresh();
+    console.log(tresc_diva);
 }

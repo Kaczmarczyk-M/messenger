@@ -39,15 +39,20 @@ body{
     border-top-left-radius: 40px;
     -moz-box-shadow: 5px -5px 107px 32px rgba(0,0,0,0.32);
     box-shadow: 5px -5px 107px 32px rgba(0,0,0,0.32);
-    display: table-cell;
-    vertical-align: bottom;
-
-    
+    /* vertical-align: bottom; */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
+#chat::-webkit-scrollbar{
+    display: none;
+}
 .log{
     float: right;
-    overflow: auto;
     margin: 25px;
     /* font-size: 24px; */
     min-height: 50px;
