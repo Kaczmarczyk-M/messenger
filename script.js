@@ -1,4 +1,3 @@
-
 var tresc_diva = [];
 
 function refresh()

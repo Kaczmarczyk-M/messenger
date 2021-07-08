@@ -1,7 +1,7 @@
 body{
     /* Background pattern from Toptal Subtle Patterns */
     background-image: url(img/triangle-mosaic.png);
-    color: lightgray;
+    color: black;
     font-size: 48px;
 }
 
